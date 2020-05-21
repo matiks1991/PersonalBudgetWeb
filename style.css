@@ -1,0 +1,196 @@
+body{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/redox_02.png");
+	font-size: 20px;
+	margin: 0 !important;
+	color: darkgreen;	
+}
+
+html, body {
+	   margin: 0;
+	   padding: 0;
+	   height:100%;
+}
+
+#title{
+	width: 100%;
+	height: 90px;
+	border-bottom:  solid 2px #005500;
+}
+
+h1{
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	letter-spacing: 4px;
+	margin-top: 0px;
+	padding-top: 18px;
+}
+
+
+#boxregister{
+	background-color: white;
+	width: 400px;
+	padding: 20px;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	-moz-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	text-align: center;
+}
+
+.selected, .notselected{
+	display: inline-block;
+	margin: 10px;
+	margin-bottom: 15px;
+	width: 120px;
+	padding: 10px 10px;
+	border: solid 1px darkgreen;
+	border-radius: 10px;
+}
+
+.selected{
+	background-color: lightgray;
+	opacity: 50%;
+}
+
+a{
+	color: darkgreen;
+	padding: 0px;
+}
+
+input[type=text], input[type=email], 
+input[type=password]{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus, input[type=email]:focus,
+input[type=password]:focus{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type=submit]{
+	width: 300px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:hover{
+	background-color: #37b93d;
+}
+
+input[type=submit]:focus{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input::-webkit-input-placeholder{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder{
+    color: #428C42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder{
+    color: #999;
+}
+input:focus:-moz-placeholder{
+    color: #428C42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder{
+    color: #999;
+}
+input:focus::-moz-placeholder{
+    color: #428C42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder{
+    color: #999;
+}
+input:focus:-ms-input-placeholder{
+    color: #428C42;
+}
+
+#footer{
+	width: 100%;
+	heght: 60px;
+}
+
+.socials{
+	background-color: darkgreen;
+	color: gray;
+	text-align: center;
+	padding: 0px;
+}
+
+.socialdivs{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socialdivs a{
+	color: gray;
+}
+
+.fb{
+	width: 250px;
+	height: 40px;
+	float:left;
+}
+
+.fb:hover{
+	background-color: #4668b3;
+}
+
+.yt{
+	width: 250px;
+	height: 40px;
+	float:left;
+}
+
+.yt:hover{
+	background-color: #d94348;
+}
+
+.tw{
+	width: 250px;
+	height: 40px;
+	float:left;
+}
+
+.tw:hover{
+	background-color: #3095d3;
+}
+
+.info{
+	height: 20px;
+	color: darkgreen;
+	text-align: center;
+	padding: 10px;
+}
