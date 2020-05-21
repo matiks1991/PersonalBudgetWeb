@@ -4,17 +4,12 @@ body{
 	font-size: 20px;
 	margin: 0 !important;
 	color: darkgreen;	
-}
-
-html, body {
-	   margin: 0;
-	   padding: 0;
-	   height:100%;
+	font-family: 'Lato', sans-serif;
 }
 
 #title{
 	width: 100%;
-	height: 90px;
+	height: 70px;
 	border-bottom:  solid 2px #005500;
 }
 
@@ -23,15 +18,28 @@ h1{
 	text-align: center;
 	letter-spacing: 4px;
 	margin-top: 0px;
-	padding-top: 18px;
+	padding-top: 8px;
 }
-
 
 #boxregister{
 	background-color: white;
 	width: 400px;
 	padding: 20px;
-	margin: 50px;
+	margin: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	-moz-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
+	text-align: center;
+}
+
+#boxlogin{
+	background-color: white;
+	width: 400px;
+	padding: 20px;
+	margin-top: 60px;
+	margin-bottom: 115px;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
