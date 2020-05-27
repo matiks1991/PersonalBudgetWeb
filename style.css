@@ -7,10 +7,14 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+#title{
+	text-align: center;
+	width: 100%;
+}
+
 #logo{
 	width: 350px;
-	height: 60px;
-	border-bottom:  solid 2px #005500;
+	font-size: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -20,16 +24,26 @@ h1{
 	text-align: center;
 	letter-spacing: 4px;
 	margin-top: 0px;
-	padding-top: 8px;
+	padding: 5px;
 	margin-left: 10px;
+	margin-bottom: 0;
+}
 
+.nav{
+	width: 100%;
+	padding: 10px 0;
+	background-color: darkgreen;
+	text-align: center;
+	border-top: 1px solid #002000;
+	border-bottom: 1px solid #002000;	
 }
 
 #boxregister{
 	background-color: white;
 	width: 400px;
 	padding: 20px;
-	margin: 65px;
+	margin: 70px;
+	margin-bottom: 65px;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
@@ -43,7 +57,7 @@ h1{
 	width: 400px;
 	padding: 20px;
 	margin-top: 65px;
-	margin-bottom: 120px;
+	margin-bottom: 125px;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
@@ -65,6 +79,47 @@ h1{
 .selected{
 	background-color: lightgray;
 	opacity: 50%;
+}
+
+.container{
+	width: 1000px;
+	margin: 0;
+	margin-left: auto;	
+	margin-right: auto;	
+	min-height: 420px;
+}
+
+.west{
+	float: left;
+	width: 750px;
+	padding: 20px;
+	text-align: justify;
+	//background-color: #E5E5DC;
+	min-height: 380px;
+}
+
+.east{
+	float: left;
+	width: 170px;
+	padding: 20px;
+	font-size: 16px;
+}
+
+#user{
+	letter-spacing: 1px;
+	padding: 5px;
+	border: dashed 1px #002000;
+	margin: 0;
+}
+
+h2{
+	color: #52361b;
+}
+
+h4{
+	margin: 0;
+	padding-bottom:2px;
+	color: #52361b;
 }
 
 a{
@@ -205,4 +260,52 @@ input:focus:-ms-input-placeholder{
 	color: darkgreen;
 	text-align: center;
 	padding: 10px;
+	font-size: 15px;
+}
+
+.sticky{
+	width: 100%;
+	position: fixed;
+	lefft: 0;
+	top: 0;
+	z-index: 100; 
+}
+
+ol{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a{
+	color: lightgray;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #002000;
+}
+
+ol > li:first-child{
+	border-left: 1px dashed #002000;
+}
+
+ol > li:hover{
+	background-color: #559B44;
+}
+
+ol > li:hover > a{
+	color: #002000;
+}
+
+ol > li:hover > ul{
+	display: block;
 }
