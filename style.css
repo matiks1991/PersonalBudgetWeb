@@ -1,7 +1,7 @@
 body{
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/redox_02.png");
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0 !important;
 	color: darkgreen;	
 	font-family: 'Lato', sans-serif;
@@ -34,30 +34,19 @@ h1{
 	padding: 10px 0;
 	background-color: darkgreen;
 	text-align: center;
-	border-top: 1px solid #002000;
-	border-bottom: 1px solid #002000;	
+	border-top: 1px solid #003000;
+	border-bottom: 1px solid #003000;	
 }
 
-#boxregister{
+#boxcontainer{
+	min-height: 420px;
+}
+
+#box{
 	background-color: white;
 	width: 400px;
 	padding: 20px;
-	margin: 70px;
-	margin-bottom: 65px;
-	margin-left: auto;
-	margin-right: auto;
-	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
-	-moz-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
-	box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
-	text-align: center;
-}
-
-#boxlogin{
-	background-color: white;
-	width: 400px;
-	padding: 20px;
-	margin-top: 65px;
-	margin-bottom: 125px;
+	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-box-shadow: 3px 3px 30px -5px rgba(98,186,161,0.9);
@@ -108,12 +97,14 @@ h1{
 #user{
 	letter-spacing: 1px;
 	padding: 5px;
-	border: dashed 1px #002000;
+	border: dashed 1px #003000;
+	border-radius: 5px;
 	margin: 0;
 }
 
 h2{
 	color: #52361b;
+	margin-top: 5px;
 }
 
 h4{
@@ -127,8 +118,7 @@ a{
 	padding: 0px;
 }
 
-input[type=text], input[type=email], 
-input[type=password]{
+#box input[type=text], #box input[type=email], #box input[type=password]{
 	width: 300px;
 	background-color: #efefef;
 	color: #666;
@@ -141,8 +131,7 @@ input[type=password]{
 	margin-top: 10px;
 }
 
-input[type=text]:focus, input[type=email]:focus,
-input[type=password]:focus{
+#box input[type=text]:focus, #box input[type=email]:focus, #box input[type=password]:focus{
 	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
@@ -151,7 +140,7 @@ input[type=password]:focus{
 	color: #428c42;
 }
 
-input[type=submit]{
+#box input[type=submit]{
 	width: 300px;
 	background-color: #36b03c;
 	font-size: 20px;
@@ -165,41 +154,42 @@ input[type=submit]{
 	outline: none;
 }
 
-input[type=submit]:hover{
+#box input[type=submit]:hover{
 	background-color: #37b93d;
 }
 
-input[type=submit]:focus{
+#box input[type=submit]:focus{
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-input::-webkit-input-placeholder{
+#box input::-webkit-input-placeholder{
     color: #999;
 }
-input:focus::-webkit-input-placeholder{
+
+#box input:focus::-webkit-input-placeholder{
     color: #428C42;
 }
 /* Firefox < 19 */
-input:-moz-placeholder{
+#box input:-moz-placeholder{
     color: #999;
 }
-input:focus:-moz-placeholder{
+#box input:focus:-moz-placeholder{
     color: #428C42;
 }
 /* Firefox > 19 */
-input::-moz-placeholder{
+#box input::-moz-placeholder{
     color: #999;
 }
-input:focus::-moz-placeholder{
+#box input:focus::-moz-placeholder{
     color: #428C42;
 }
 /* Internet Explorer 10 */
-input:-ms-input-placeholder{
+#box input:-ms-input-placeholder{
     color: #999;
 }
-input:focus:-ms-input-placeholder{
+#box input:focus:-ms-input-placeholder{
     color: #428C42;
 }
 
@@ -291,11 +281,11 @@ ol > li{
 	float: left;
 	width: 150px;
 	height: 40px;
-	border-right: 1px dashed #002000;
+	border-right: 1px dashed #003000;
 }
 
 ol > li:first-child{
-	border-left: 1px dashed #002000;
+	border-left: 1px dashed #003000;
 }
 
 ol > li:hover{
@@ -303,9 +293,86 @@ ol > li:hover{
 }
 
 ol > li:hover > a{
-	color: #002000;
+	color: #003000;
 }
 
 ol > li:hover > ul{
 	display: block;
+}
+
+.row
+{
+	margin: 10px 10px;
+}
+
+#comment{
+	resize: none;
+	width: 725px;
+	font-size: 16px;
+	padding: 0;
+}
+
+fieldset{
+	border: solid 1px #003000;
+	border-radius: 5px;
+}
+
+fieldset div{
+	font-size: 16px;
+}
+
+textarea, input[type=number], input[type=date]{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 5px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 5px;
+}
+
+#date{
+	margin-left: 13px;
+}
+
+textarea:focus, input[type=number]:focus, input[type=date]:focus{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type=submit], input[type=reset]{
+	width: 120px;
+	font-size: 16px;
+	color: lightgray;
+	padding: 7px 0px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]{
+	background-color: #36b03c;
+}
+
+input[type=reset]{
+	background-color: #52361b;
+	opacity: 0.6;
+}
+
+input[type=submit]:hover{
+	background-color: #37b93d;
+}
+
+input[type=reset]:hover{
+	opacity: 0.55;
 }
