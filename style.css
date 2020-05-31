@@ -13,10 +13,11 @@ body{
 }
 
 #logo{
-	width: 350px;
+	width: auto;
 	font-size: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	display: inline-block;
 }
 
 h1{
@@ -73,6 +74,7 @@ h1{
 .container{
 	width: 1000px;
 	margin: 0;
+	padding: 0;
 	margin-left: auto;	
 	margin-right: auto;	
 	min-height: 420px;
@@ -80,18 +82,20 @@ h1{
 
 .west{
 	float: left;
-	width: 750px;
+	width: 710px;
 	padding: 20px;
 	text-align: justify;
 	//background-color: #E5E5DC;
 	min-height: 380px;
+	margin: 0;
 }
 
 .east{
 	float: left;
-	width: 170px;
+	width: 210px;
 	padding: 20px;
 	font-size: 16px;
+	text-align: center;
 }
 
 #user{
@@ -99,7 +103,7 @@ h1{
 	padding: 5px;
 	border: dashed 1px #003000;
 	border-radius: 5px;
-	margin: 0;
+	margin: 5px;
 }
 
 h2{
@@ -261,7 +265,7 @@ a{
 	z-index: 100; 
 }
 
-ol{
+.nav ol{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -271,32 +275,32 @@ ol{
 	display: inline-block;
 }
 
-ol a{
+.nav ol a{
 	color: lightgray;
 	text-decoration: none;
 	display: block;
 }
 
-ol > li{
+.nav ol > li{
 	float: left;
 	width: 150px;
 	height: 40px;
 	border-right: 1px dashed #003000;
 }
 
-ol > li:first-child{
+.nav ol > li:first-child{
 	border-left: 1px dashed #003000;
 }
 
-ol > li:hover{
+.nav ol > li:hover{
 	background-color: #559B44;
 }
 
-ol > li:hover > a{
-	color: #003000;
+.nav ol > li:hover > a{
+	color: #451717;
 }
 
-ol > li:hover > ul{
+.nav ol > li:hover > ul{
 	display: block;
 }
 
@@ -307,7 +311,7 @@ ol > li:hover > ul{
 
 #comment{
 	resize: none;
-	width: 725px;
+	width: 690px;
 	font-size: 16px;
 	padding: 0;
 }
@@ -335,7 +339,7 @@ textarea, input[type=number], input[type=date]{
 }
 
 #date{
-	margin-left: 13px;
+	margin-left: 11px;
 }
 
 textarea:focus, input[type=number]:focus, input[type=date]:focus{
@@ -375,4 +379,194 @@ input[type=submit]:hover{
 
 input[type=reset]:hover{
 	opacity: 0.55;
+}
+
+#dropdown ol{
+	padding: 5px;
+	margin: 0;
+	list-style-type: none;
+	font-size: 15px;
+	height: 30px;
+	width: 160px;
+	line-height: 200%;
+	display: inline-block;
+	border: 1px solid #003000;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #228822;
+	margin-top: 15px;
+}
+
+#dropdown ol:hover{
+	background-color: #559B44;;
+}
+
+#dropdown ol div{
+	color: lightgray;
+	text-decoration: none;
+	display: block;
+	text-align:center;
+}
+
+#dropdown ol:first-child div:{
+	border: 1px dashed #003000;
+}
+
+#dropdown ol > li{
+	float: left;
+	width: 100%;
+	height: 40px;
+}
+
+#dropdown ol > li:hover > div
+{
+	color: #451717;
+}
+
+#dropdown ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+#dropdown ol > li:hover > ul
+{
+	background-color: #559B44;
+	display: block;
+}
+
+#dropdown ol > li > ul > li
+{
+	background-color:#559B44;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #003000;
+}
+
+#dropdown ol > li > ul > li:hover
+{
+	background-color: #228822;
+}
+
+#dropdown ol > li > ul > li:hover > div
+{
+	color: #451717;
+	cursor: pointer;
+}
+
+#period{
+	display: none;
+	margin: 5px;
+	margin-top :10px;
+	padding: 0;
+	border: 1px dashed #003000;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#period input[type=date]{
+	width: 140px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 1px;
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	margin-left: 3px;
+	margin-top: 5px;
+}
+
+#period input[type=date]:focus{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+#period input[type=submit]{
+	width: 120px;
+	font-size: 16px;
+	color: lightgray;
+	padding: 7px 0px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+#period input[type=submit]{
+	background-color: #36b03c;
+}
+
+#period input[type=submit]:hover{
+	background-color: #37b93d;
+}
+
+table{
+	width: 100%;
+	border: 3px solid #52361b;
+	border-collapse: collapse;
+}
+
+th{
+	border: 3px solid #52361b;
+	text-align: center;
+	background-color: lightgray;
+}
+
+th.title{
+	colspan: 2;
+}
+
+td{
+	border: 1px solid #52361b;
+	padding: 1px 10px; 
+	min-width: 135px;
+}
+
+td.sum{
+	background-color: lightgray;
+	border: 3px solid #52361b;
+	font-weight: 700;
+}
+
+tbody td:nth-child(even) {
+	background-color: #eaeaea;
+}
+
+tbody tr:nth-child(even) {
+	border-bottom: 2px solid #52361b;
+}
+
+.table{
+	width: 48%;
+	float:left;
+	margin: 1%;
+}
+
+#balance{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+	font-weight: 700;
+}
+
+#balance tr:nth-child(even){
+	text-align: center;
+}
+
+#piechart{
+	margin:0;
 }
