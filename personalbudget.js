@@ -37,3 +37,7 @@ function setCurrentDate()
 	$('#date').val(date);
 }
 
+$('#customPeriod').click(
+	$('#periodTime').css('display', 'block');
+);
+
