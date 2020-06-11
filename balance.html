@@ -6,11 +6,15 @@
 	<meta name="description" content="Oblicz swój budżet. Strona pomagająca prowadzić budżet osobisty."/>
 	<meta name="keywords" content="budżet, finanse, oszczędzanie, pieniądze"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="shortcut icon" href="img/dollar.png" />
 	
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<script src="jquery-3.4.1.min.js"></script>
-	<script src="personalbudget.js"></script>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="loader.js"></script>
+	
+	<script type="text/javascript" src="personalbudget.js"></script>
 	<link rel="stylesheet" href="css/fontello.css">
 
 </head>
@@ -46,8 +50,16 @@
 						
 						<header><h2>Przeglądaj bilans<h2></header>
 							
+							<div>
+								<div id="incomes" class="table"></div> 
+								<div id="expenses" class="table"></div> 
+								<div style="clear: both;"></div>
+							</div> 
+							
+							<div id="balance"></div> 
+							
+							<div id="piechart"></div> 
 										
-						
 					</article>
 			</div>
 			
@@ -58,18 +70,18 @@
 					
 					<div id="dropdown">
 						<ol>
-							<li><a href="#">Wybierz okres</a>
+							<li><div>Wybierz okres</div>
 								<ul>
-									<li><a href="#" id="currentMonth">Bieżący miesiąc</a></li>
-									<li><a href="#" id="previousMonth">Poprzedni miesiąc</a></li>
-									<li><a href="#" id="currentYear">Bieżący rok</a></li>
-									<li><a href="#" id="customPeriod">Niestandardowy</a></li>
+									<li><div id="currentMonth" onclick="showCurrentMonth()">Bieżący miesiąc</div></li>
+									<li><div id="previousMonth" onclick="showPreviousMonth()">Poprzedni miesiąc</div></li>
+									<li><div id="currentYear" onclick="showCurrentYear()">Bieżący rok</div></li>
+									<li><div id="customPeriod" onclick="showCustomPeriod()">Niestandardowy</div></li>
 								</ul>
 							</li>
 						</ol>
 					</div>
 					
-					<div id="periodTime">
+					<div id="period">
 					
 						<form>
 							
@@ -85,7 +97,6 @@
 								<input type="submit" value="Zatwierdź" >
 							</div>
 						</form>
-					
 					
 					</div>
 					
@@ -131,7 +142,6 @@
 		
 		menu();
 		writeUserName();
-		setCurrentDate();
 		
 	</script>
 	
