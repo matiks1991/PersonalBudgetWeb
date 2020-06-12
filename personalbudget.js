@@ -47,11 +47,11 @@ function showCurrentMonth(){
 }
 
 function showPreviousMonth(){
-	$('#period').css('display', 'block');
+	
 }
 
 function showCurrentYear(){
-	$('#period').css('display', 'block');
+	
 }
 
 function showCustomPeriod(){
@@ -178,11 +178,11 @@ function drawChart() {
 	var options = {
 		title:'Wydatki', 
 		titleTextStyle:{color:'#52361b', fontName:'Lato', fontSize:24, bold:1},
-		legendTextStyle:{color:'darkgreen', fontName:'Lato', fontSize:18},
+		legendTextStyle:{color:'darkgreen', fontName:'Lato', fontSize:16},
 		width:700, 
 		height:350,
 		backgroundColor:'none',
-		sliceVisibilityThreshold:.01,
+		sliceVisibilityThreshold:.015,
 		marginLeft:'auto',
 		marginRight:'auto',
 		marginBottom:'0px',
