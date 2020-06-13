@@ -1,6 +1,6 @@
 var userName = "Józiu";
 
-function menu()
+function workingMenu()
 {
 $(document).ready(function() {
 var NavY = $('.nav').offset().top;
@@ -153,11 +153,11 @@ function printBalance()
 }
 
 
-// Load google charts
+
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
-// Draw the chart and set the chart values
+
 function drawChart() {
 	
 	var data = new google.visualization.DataTable();
@@ -165,7 +165,6 @@ function drawChart() {
 	data.addColumn('string' , 'Expense');
 	data.addColumn('number', 'Amount');
 	
-	// data.addRows(1);
 	data.addRows(expenses.length);
 	
 	for(i=0; i<expenses.length; i++)
@@ -174,7 +173,6 @@ function drawChart() {
 		data.setCell(i, 1, expenses[i].amount);
 	}
 	
-	// Optional; add a title and set the width and height of the chart
 	var options = {
 		title:'Wydatki', 
 		titleTextStyle:{color:'#52361b', fontName:'Lato', fontSize:24, bold:1},
@@ -191,7 +189,6 @@ function drawChart() {
 		
 	};
 
-	// Display the chart inside the <div> element with id="piechart"
 	var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 	chart.draw(data, options);
 }

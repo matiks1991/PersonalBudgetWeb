@@ -44,7 +44,7 @@
 			<div class="west"> 
 					<article>
 						
-						<header><h2>Dodaj wydatek<h2></header>
+						<header><h2>Dodaj wydatek</h2></header>
 							
 						<form>
 							<div class="row">
@@ -54,19 +54,59 @@
 								<label>Data: <input id="date" type ="date" name="day" required></label>
 							</div>
 							
+							
+							<fieldset>
+					
+								<legend> Sposób płatności: </legend>
+						
+								<div><label><input type="radio" value="1" name="paymentMethod" checked> Gotówka </label></div>
+								
+								<div><label><input type="radio" value="2" name="paymentMethod"> Karta debetowa </label></div>
+								
+								<div><label><input type="radio" value="3" name="paymentMethod"> Karta kredytowa </label></div>
+								
+							</fieldset>
+							
 							<fieldset>
 					
 								<legend> Kategoria: </legend>
 						
-								<div><label><input type="radio" value="1" name="category" checked> Wynagrodzenie </label></div>
+								<div><label><input type="radio" value="1" name="category" checked> Jedzenie </label></div>
 								
-								<div><label><input type="radio" value="2" name="category"> Odsetki bankowe </label></div>
+								<div><label><input type="radio" value="2" name="category"> Mieszkanie </label></div>
 								
-								<div><label><input type="radio" value="3" name="category"> Sprzedaż na allegro </label></div>
+								<div><label><input type="radio" value="3" name="category"> Transport </label></div>
 								
-								<div><label><input type="radio" value="4" name="category"> Inne </label></div>
+								<div><label><input type="radio" value="4" name="category"> Telekomunikacja </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Opieka zdrowotna </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Ubranie </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Higiena </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Dzieci </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Rozrywka </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Wycieczka </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Szkolenia </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Książki </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Oszczędności </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Na złotą jesień, czyli emeryturę </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Spłata długów </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Darowizna </label></div>
+								
+								<div><label><input type="radio" value="4" name="category"> Inne wydatki </label></div>
 								
 							</fieldset>
+							
 							
 							<div class="row">
 								<div><label for="comment">Komentarz (opcjonalnie):</label></div>
@@ -127,7 +167,7 @@
 	
 	<script>
 		
-		menu();
+		workingMenu();
 		writeUserName();
 		setCurrentDate();
 		

@@ -85,7 +85,6 @@ h1{
 	width: 710px;
 	padding: 20px;
 	text-align: justify;
-	//background-color: #E5E5DC;
 	min-height: 380px;
 	margin: 0;
 }
@@ -199,7 +198,7 @@ a{
 
 #footer{
 	width: 100%;
-	heght: 60px;
+	height: 60px;
 }
 
 .socials{
@@ -260,7 +259,7 @@ a{
 .sticky{
 	width: 100%;
 	position: fixed;
-	lefft: 0;
+	left: 0;
 	top: 0;
 	z-index: 100; 
 }
@@ -319,6 +318,7 @@ a{
 fieldset{
 	border: solid 1px #003000;
 	border-radius: 5px;
+	margin-top: 10px;
 }
 
 fieldset div{
@@ -406,10 +406,6 @@ input[type=reset]:hover{
 	text-decoration: none;
 	display: block;
 	text-align:center;
-}
-
-#dropdown ol:first-child div:{
-	border: 1px dashed #003000;
 }
 
 #dropdown ol > li{
@@ -523,10 +519,6 @@ th{
 	border: 3px solid #52361b;
 	text-align: center;
 	background-color: lightgray;
-}
-
-th.title{
-	colspan: 2;
 }
 
 td{
