@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Przeglądaj bilans</title>
+	<meta name="description" content="Oblicz swój budżet. Strona pomagająca prowadzić budżet osobisty."/>
+	<meta name="keywords" content="budżet, finanse, oszczędzanie, pieniądze"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="shortcut icon" href="img/dollar.png" />
+	
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="jquery.tablesorter.min.js"></script>
+	<script  src="loader.js"></script>
+	
+	<script src="personalbudget.js"></script>
+	<link rel="stylesheet" href="css/fontello.css">
+
+</head>
+
+<body>	
+
+	<header>
+		<div id="title">
+			<div id="logo">
+				<i class="icon-dollar" style="float:left;"></i>
+				<h1 style="float:left;">Twój budżet</h1>
+				<div style="clear:both;"></div>
+			</div>
+			<nav>
+				<div class="nav">
+					<ol>
+						<li><a href="menu.html">Strona główna</a></li>
+						<li><a href="expense.html">Dodaj wydatek</a></li>
+						<li><a href="income.html">Dodaj przychód</a></li>
+						<li><a href="balance.html">Przeglądaj bilans</a></li>
+						<li><a href="settings.html">Ustawienia</a></li>
+						<li><a href="login.html">Wyloguj</a></li>
+					</ol>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container">
+			<div class="west"> 
+					<article>
+						
+						<header><h2>Przeglądaj bilans</h2></header>
+							
+							<div>
+								<div id="incomes" class="table"></div> 
+								<div id="expenses" class="table"></div> 
+								<div style="clear: both;"></div>
+							</div> 
+							
+							<div id="balance"></div> 
+							
+							<div id="piechart"></div> 
+										
+					</article>
+			</div>
+			
+			<div class="east">
+				<aside>
+				
+					<div id="user"><h4>Zalogowany:</h4>Brak</div>
+					
+					<div id="dropdown">
+						<ol>
+							<li><div>Wybierz okres</div>
+								<ul>
+									<li><div id="currentMonth" onclick="showCurrentMonth()">Bieżący miesiąc</div></li>
+									<li><div id="previousMonth" onclick="showPreviousMonth()">Poprzedni miesiąc</div></li>
+									<li><div id="currentYear" onclick="showCurrentYear()">Bieżący rok</div></li>
+									<li><div id="customPeriod" onclick="showCustomPeriod()">Niestandardowy</div></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="period">
+					
+						<form>
+							
+							<div class="row">
+								<label>Od: <input id="date1" type ="date" name="start" required></label>
+							</div>
+							
+							<div class="row">
+								<label>Do: <input id="date2" type ="date" name="end" required></label>
+							</div>
+							
+							<div class="row">
+								<input type="submit" value="Zatwierdź" >
+							</div>
+						</form>
+					
+					</div>
+					
+				</aside>
+			</div>
+			
+			<div style="clear:both;"></div>
+			
+		</div>
+	</main>
+	
+	<footer>
+		<div id="footer">
+			<div class="socials">
+				<div class="socialdivs">
+					<a href="https://facebook.com" target="_blank">
+						<div class="fb">
+							<i class="icon-facebook"></i>
+						</div>
+					</a>
+					<a href="https://youtube.com" target="_blank">
+						<div class="yt">
+							<i class="icon-youtube"></i>
+						</div>
+					</a>
+					<a href="https://twitter.com" target="_blank">
+						<div class="tw">
+							<i class="icon-twitter"></i>
+						</div>	
+					</a>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+			
+			<div class="info">
+				Wszelkie prawa zastrzeżone &copy; 2020 Dziękuję za wizytę!
+			</div>
+		</div>
+		
+	</footer>
+	
+	<script>
+		
+		workingMenu();
+		writeUserName();
+		
+	</script>
+	
+</body>
+</html>
